@@ -58,7 +58,7 @@ def translate_list_texts(texts, dest_language):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Translate text using OpenAI API")
     parser.add_argument("--input", help="Input dictionary containing 'text' and 'dest_language'")
-    parser.add_argument("--openai-key", help="Fill in with your OpenAI API key", default="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")
+    parser.add_argument("--openai-key", help="Fill in with your OpenAI API key", default="YOUR_API_KEY")
     args = parser.parse_args()
     
     openai.api_key = args.openai_key
